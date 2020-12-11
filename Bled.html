@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bled</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Expedition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style2.css" type="text/css" rel="stylesheet" media="all">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!-- start-smooth-scrolling-->	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->	
+</head>
+<body>
+	<!--banner-->
+	<div class="banner" id="home">
+		<div class="banner-left">
+			<div class="logo" style="margin-left:0px;">
+				<h2>Bled Slovenia</h2>
+				<h6>Lake Bled, the fairy tale world in the heart of the European travel destination, is the most beautiful town in Europe known as the Alps' tears.</h6>
+				<h6>Located in Slovenia's northwest part, with a comfortable climate, excellent spring water, and gorgeous natural scenery, Lake Brad is a Slovenian paradise.</h6>
+				<h6>The crystal-clear turquoise waters, the majestic Julian Alps, and the picturesque small churches in the middle of the lake have made Lake Brad one of Europe's most popular tourist destinations in recent years.</h6>
+				<div class="address">
+					<p>4260 Bled, Slovenia</p>
+					<p></p>
+				</div>
+			</div>	
+		</div>
+		<div class="banner-right">
+			<!--banner Slider starts Here-->
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 3
+					  $("#slider3").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				</script>
+				<!--//End-slider-script-->
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-image banner-Bled1">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-Bled2">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-Bled3">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-Bled4">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-Bled5">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav> 
+					<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+					<a href="index.html" class="active">Home</a> 
+					<a href="Toscana.html">Toscana</a> 
+					<a href="Hallstatt.html">Hallstatt</a> 
+					<a href="Bled.html" >Bled, Slovenia</a>
+					<a href="Dubrovnik.html">Dubrovnik, Croatia</a> 
+					<a href="Grindelwald.html">Grindelwald, Switzerland</a> 
+				</nav>
+				<script>
+				(function($){
+					// Menu Functions
+					$(document).ready(function(){
+					$('#menuToggle').click(function(e){
+						var $parent = $(this).parent('nav');
+					  $parent.toggleClass("open");
+					  var navState = $parent.hasClass('open') ? "hide" : "show";
+					  $(this).attr("title", navState + " navigation");
+							// Set the timeout to the animation length in the CSS.
+							setTimeout(function(){
+								console.log("timeout set");
+								$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+							}, 200);
+						e.preventDefault();
+					});
+				  });
+				})(jQuery);
+				</script>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//banner-->
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toscana</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Expedition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style2.css" type="text/css" rel="stylesheet" media="all">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!-- start-smooth-scrolling-->	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->	
+</head>
+<body>
+	<!--banner-->
+	<div class="banner" id="home">
+		<div class="banner-left">
+			<div class="logo" style="margin-left:0px;">
+				<h2>Tuscany Italy</h2>
+				<h6>Tuscany is famous for its bucolic scenery. In Pienza, Siena's town, the hillsides are beautiful and the wheat fields nearby, blown by summer winds, are spectacular.</h6>
+				<h6>Rigg Farm is a square structure in the distance, especially in the morning fog effect is very beautiful.</h6>
+				<h6>Rigo Farm is a typical representative of the Valley of Val d'Orcia, which can be shot from all angles on its nearby slopes, with different effects.</h6>
+				<div class="address">
+					<p>53027 San Quirico d'Orcia, Province of Siena, Italy</p>
+					<p></p>
+				</div>
+			</div>	
+		</div>
+		<div class="banner-right">
+			<!--banner Slider starts Here-->
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 3
+					  $("#slider3").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				</script>
+				<!--//End-slider-script-->
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-image">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image1">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image2">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image3">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image4">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav> 
+					<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+					<a href="index.html" class="active">Home</a> 
+					<a href="Toscana.html">Toscana</a> 
+					<a href="Hallstatt.html">Hallstatt</a> 
+					<a href="Bled.html" >Bled, Slovenia</a>
+					<a href="Dubrovnik.html">Dubrovnik, Croatia</a> 
+					<a href="Grindelwald.html">Grindelwald, Switzerland</a> 
+				</nav>
+				<script>
+				(function($){
+					// Menu Functions
+					$(document).ready(function(){
+					$('#menuToggle').click(function(e){
+						var $parent = $(this).parent('nav');
+					  $parent.toggleClass("open");
+					  var navState = $parent.hasClass('open') ? "hide" : "show";
+					  $(this).attr("title", navState + " navigation");
+							// Set the timeout to the animation length in the CSS.
+							setTimeout(function(){
+								console.log("timeout set");
+								$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+							}, 200);
+						e.preventDefault();
+					});
+				  });
+				})(jQuery);
+				</script>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//banner-->
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
